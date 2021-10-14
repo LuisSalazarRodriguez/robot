@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RETO</title>
+  <link rel="stylesheet" href="./fonts/roboto/roboto.css">
+  <link rel="stylesheet" href="./fonts/font-awesome/css/all.css">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto';
+  }
+
+  .box1 {
+    width: 436px;
+    height: 121px;
+    left: 20px;
+    top: 25px;
+    background: #9017EF;
+    position: fixed;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .box1-creador {
+    position: absolute;
+    width: 371px;
+    height: 28px;
+    left: 52px;
+    top: 45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+  }
+
+  .box2 {
+    width: 221px;
+    height: 121px;
+    left: 20px;
+    top: 480px;
+    background: #9017EF;
+    position: fixed;
+    overflow: hidden;
+
+  }
+
+  .box2-sigueme p {
+    position: absolute;
+    width: 96px;
+    height: 28px;
+    left: 37px;
+    top: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+
+  .box-robot-cabeza {
+    position: absolute;
+    width: 288px;
+    height: 253px;
+    left: 673px;
+    top: 250px;
+    background: #C4C4C4;
+    border: 5px solid royalblue;
+    z-index: 1;
+  }
+
+  .box-robot-cabeza-1 {
+    position: absolute;
+    width: 68px;
+    height: 73px;
+    left: 40px;
+    top: 50px;
+    background: #FB1D1D;
+  }
+
+  .box-robot-cabeza-2 {
+    position: absolute;
+    width: 68px;
+    height: 73px;
+    left: 180px;
+    top: 50px;
+    background: #FB1D1D;
+  }
+
+  .box-robot-cabeza-3 {
+    position: absolute;
+    width: 149px;
+    height: 61px;
+    left: 70px;
+    top: 160px;
+    background: #B61414;
+  }
+
+  .box-robot-cuerpo {
+    position: absolute;
+    width: 400px;
+    height: 374px;
+    left: 618px;
+    top: 490px;
+    background: #AD1010;
+  }
+
+  .box-robot-cuerpo-1 {
+    position: absolute;
+    width: 231px;
+    height: 79px;
+    left: 536px;
+    top: 580px;
+    background: #C4C4C4;
+  }
+
+  .box-robot-cuerpo-1-1 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 758px;
+    top: 590px;
+    background: #CF9729;
+  }
+
+  .box-robot-cuerpo-1-2 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 758px;
+    top: 610px;
+    background: #CF9729;
+  }
+
+  .box-robot-cuerpo-1-3 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 758px;
+    top: 630px;
+    background: #CF9729;
+  }
+
+  .box-robot-cuerpo-2 {
+    position: absolute;
+    width: 231px;
+    height: 79px;
+    left: 850px;
+    top: 580px;
+    background: #C4C4C4;
+  }
+
+  .box-robot-cuerpo-2-1 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 837px;
+    top: 590px;
+    background: #CF9729;
+  }
+
+  .box-robot-cuerpo-2-2 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 837px;
+    top: 610px;
+    background: #CF9729;
+  }
+
+  .box-robot-cuerpo-2-3 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 837px;
+    top: 630px;
+    background: #CF9729;
+  }
+
+  .box-robot-pie-1 {
+    position: absolute;
+    width: 98px;
+    height: 222px;
+    left: 652px;
+    top: 830px;
+    background: #C4C4C4;
+  }
+
+  .box-robot-pie-1-1 {
+    position: absolute;
+    width: 132px;
+    height: 53px;
+    left: 626px;
+    top: 1007px;
+    background: #CF9729;
+  }
+
+  .box-robot-pie-2 {
+    position: absolute;
+    width: 98px;
+    height: 222px;
+    left: 852px;
+    top: 830px;
+    background: #C4C4C4;
+  }
+
+  .box-robot-pie-2-1 {
+    position: absolute;
+    width: 132px;
+    height: 53px;
+    left: 830px;
+    top: 1008px;
+    background: #CF9729;
+  }
+
+  .div-img {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+
+  }
+
+  .fa-twitter {
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+
+  .fa-facebook {
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="box1">
+      <div class="box1-creador">CREADO POR LUIS SALAZAR</div>
+    </div>
+    <div class="box2">
+      <div class="box2-sigueme">
+        <p>Sigueme</p>
+        <div class="div-img">
+          <img src="" alt="" class="fab fa-twitter">
+          <img src="" alt="" class="fab fa-facebook">
+        </div>
+      </div>
+    </div>
+    <div class="box-robot-cabeza">
+      <div class="box-robot-cabeza-1"></div>
+      <div class="box-robot-cabeza-2"></div>
+      <div class="box-robot-cabeza-3"></div>
+    </div>
+    <div class="box-robot-cuerpo"></div>
+    <div class="box-robot-cuerpo-1"></div>
+    <div class="box-robot-cuerpo-1-1"></div>
+    <div class="box-robot-cuerpo-1-2"></div>
+    <div class="box-robot-cuerpo-1-3"></div>
+    <div class="box-robot-cuerpo-2"></div>
+    <div class="box-robot-cuerpo-2-1"></div>
+    <div class="box-robot-cuerpo-2-2"></div>
+    <div class="box-robot-cuerpo-2-3"></div>
+    <div class="box-robot-pie-1"></div>
+    <div class="box-robot-pie-1-1"></div>
+    <div class="box-robot-pie-2"></div>
+    <div class="box-robot-pie-2-1"></div>
+  </header>
+
+</body>
+
+</html>
